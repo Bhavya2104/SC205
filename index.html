@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DM-Project</title>
     <!-- <link rel="" href="main.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <style>
         .title {
             color: #323237;
@@ -80,29 +83,54 @@
 
         .pointtext {
             font-size: 16px;
-            margin-left: 10px;
+            margin-left: 25px;
+            margin-right: 25px;
             margin-bottom: -10px;
         }
 
         .content {
-            font-size:17.5px;
-            margin-left: 20px;
+            font-size: 17.5px;
+            word-wrap: break-word;
+            margin-left: 40px;
+            margin-right: 15px;
         }
-        .cao
-        {
+
+        .cao {
             margin-left: -17px;
         }
-        #cao2
-        {
+
+        #cao2 {
             margin-left: -2px;
         }
-        #cao3
-        {
-            color:#eee2f9 ;
-            padding:8px;
+
+        #cao3 {
+            color: #eee2f9;
+            padding: 8px;
             margin-bottom: -5px;
             background-color: #808a9f;
             opacity: 0.7;
+        }
+
+        .winset {
+            font-size: 13px;
+            margin-top: 100px;
+            text-align: center;
+            font-family: 'Lobster', cursive;
+        }
+
+        .cells {
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        .celltext
+        {
+            margin-bottom: 30px;
+        }
+        .op 
+        {
+            margin-bottom: 30px;
+            margin-top: 15px;
         }
     </style>
 </head>
@@ -120,23 +148,162 @@
             <h2>What is Leukemia ?</h2>
         </div>
         <div class="content">
-            <h4>Leukemia is cancer of the body's blood-forming tissues, including the bone marrow and the lymphatic system.</h4>
+            <h4>Leukemia was first described by anatomist and surgeon Alfred-Armand-
+                Louis-Marie Velpeau in 1827. A more complete description was given by
+                pathologist Rudolf Virchow in 1845. Around ten years after Virchow’s
+                findings, pathologist Franz Ernst Christian Neumann found that the
+                bone marrow of a deceased person with leukemia was colored ”dirty
+                green-yellow” as opposed to the normal red. This finding allowed Neu-
+                mann to conclude that a bone marrow problem was responsible for the
+                abnormal blood of people with leukemia.</h4>
+        </div>
+        <div class="content">
+            <h4>Leukemia is cancer of the body’s blood-forming tissues, including the
+                bone marrow and the lymphatic system. Many types of leukemia exist.
+                Some forms of leukemia are more common in children. Other forms of
+                leukemia occur mostly in adults. Leukemia usually involves the white
+                blood cells. Your white blood cells are potent infection fighters — they
+                normally grow and divide in an orderly way, as your body needs them.
+                But in people with leukemia, the bone marrow produces an excessive
+                amount of abnormal white blood cells, which don’t function properly.
+                Treatment for leukemia can be complex — depending on the type of
+                leukemia and other factors. But there are strategies and resources that
+                can help make your treatment successful.
+            </h4>
+        </div>
+        <div class="pointtext">
+            <h2>Question: </h2>
+        </div>
+        <div class="content">
+            <h4>
+                Should we add information about the types of leukemia
+                as well and should we add images as well of leukemia ailing blood cell,
+                is more introduction, history or statistics about leukemia needed ???
+            </h4>
+            <center>
+                <img class="img" src="statistics.png" alt="" height="400">
+            </center>
         </div>
         <div class="pointtext">
             <h2>Motive :</h2>
         </div>
         <div class="content">
-            <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est maxime accusamus qui reprehenderit rem
-                impedit minus possimus a esse enim at ullam voluptate harum, fugit neque mollitia voluptas obcaecati
-                adipisci tempore inventore atque beatae.</h4>
-            <div class="pointtext">
-                <h2 class="cao">Commercial application of LDM</h2>
-            </div>
-            <div class="content" id="cao2">
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur culpa mollitia accusantium, aliquam itaque optio, inventore fugit reprehenderit, sapiente ullam numquam officiis voluptate architecto beatae atque pariatur quae ab est debitis consectetur quibusdam! Dolore?</h4>
-            </div>
+            <h4>
+                Upon researching leukemia we realized that the general population lacks
+                awareness and resources to take proper tests and make consultations
+                with doctors. Hence, we deicided to take a step forward to assist and
+                provide a viable solution to the people by developing the Leukemia
+                Detection Module in order to allow people to get access to easier and
+                cheaper testing services. We hope to raise awareness about Leukemia
+                and also help in curbing the unpredictability of this disease.
+
+            </h4>
         </div>
-        <h4 id="bodytext"><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, necessitatibus quae delectus vero ullam tempora possimus, amet facilis quia at aperiam ut quas reiciendis dolor aliquid fugit provident in placeat veniam officiis ipsum corporis ratione! Similique nihil reiciendis fugiat fuga.</h4>
+
+        <!-- half  -->
+        <!-- half  -->
+        <!-- half  -->
+        <div class="pointtext">
+            <h2>LDM :</h2>
+        </div>
+        <div class="content">
+            <h4>
+                The Leukemia Detection Module compares the average healthy blood
+                cell with the blood cell of a person suspected to be ailing from Leukemia.For
+                this we need to check the blood smear of a person and by calculating
+                the percentage of lymphocytes and white blood cells,LDM gives the re-
+                sult whether the person is suffering from leukemia or not.Also it gives
+                information about the cancer stage.For calculating the percentage we
+                need to convert images into numbers which is done by using Matrix.
+
+            </h4>
+        </div>
+
+        <!-- NEXT TOPIC -->
+        <div class="pointtext">
+            <h2>Formulating The Mathematics :</h2>
+        </div>
+        <div class="content">
+            <h4>
+                In the module we will compare the two cells thus first we will take the
+                images of the cell and then we will convert in to 3-D matrix with the
+                help of coding. Image is arrangement of colours in a pattern, and to
+                form matrix of this image,LDM assign numbers to this colour by using
+                the percentage of Red Green and blue colours.By regulating these three
+                colours from 0 to 255,we get all the colours.For example,Yellow can be
+                represented as(R=255,G=255,B=0)
+            </h4>
+        </div>
+        <div class="content">
+            <h4>
+                So every colour has its own array of 3 elements.Due to this image is
+                converted to 3D array. We will perform the required calculations on
+                matrix discussed in section ’solving the mathematics’ to detect the
+                cancer in the cell. The mathematics include addition and subtraction
+                of matrix and calculating the percentage to determine the cancer
+            </h4>
+            <center>
+                <img class="cells" src="2_256.png" alt="">
+                <img class="cells" src="3_256.png" alt="">
+                <br>
+                <div class="celltext">
+
+                    Healthy Cells
+                </div>
+                <img class="cells" src="4_256.png" alt="">
+                <img class="cells" src="5_256.png" alt="">
+                <br>
+                <div class="celltext">
+
+                    Cancerous Cells
+                </div>
+            </center>
+        </div>
+
+        <!-- NEXT TOPIC -->
+        <div class="pointtext">
+            <h2>Solving The Mathematics :</h2>
+        </div>
+        <div class="content">
+            <h4>
+                As discussed above first we will convert the images into matrix. If
+                we have image dimensions of 256*256 we get the matrix of dimen-
+                sion(256*256*3).Now in the image the lymphocytes cell and white blood
+                cell whose number increases during cancer are depicted as dark in colour
+                and other components which are present in high number in healthy cell
+                are depicted white in colour. Thus after taking both image matrix we
+                will subtract the matrix which will give the negative elements,by cal-
+                culating the percentage of this negative elements with respect to total
+                number of elements gives us the percentage of the lymphocytes and
+                white blood cells which causes the leukemia cancer. This percentage
+                helps to recognise the cancer stage
+            </h4>
+        </div>
+
+        <!-- next topic -->
+
+        <div class="pointtext">
+            <h2>Output :</h2>
+        </div>
+        <center>
+            <img class="op" src="output.png" alt="" height="400" width="1450">
+        </center>
+        <div class="pointtext">
+            <h2>Interpretation and Significance of Solution :</h2>
+        </div>
+        <div class="content">
+            <h4>
+                Thus with the help of LDM we are able to find the percentage of cancer
+                in a patient and the stage of leukemia.According to internet survey
+                their are many patients of leukemia in India who get to know about
+                the cancer at third stage or fourth stage due to which it becomes hard
+                to treat them and many patients lost their life just because they did
+                not get to know about the cancer at an early stage.
+                With the help of our test module many lives can be saved as it will
+                inform the patients about the cancer at an early stage so that the
+                patient can get required treatment.
+            </h4>
+        </div>
         <div class="outro">
             <div>
                 <h3 id="cao3">
@@ -147,7 +314,8 @@
                 <center class="center">
                     <a href="https://www.youtube.com/" target="_blank"><img class="setting" src="yt3.png" alt=""
                             width="90" height="90"></a>
-                    <a href="https://www.overleaf.com/" target="_blank"><img src="overleaf.png" alt="" width="70"></a>
+                    <a href="https://www.overleaf.com/project/62c47cced7d9e78e613a8093" target="_blank"><img
+                            src="overleaf.png" alt="" width="70"></a>
                 </center>
             </div>
             <h2 class="n2">Contributors</h2>
@@ -163,6 +331,9 @@
                 <br>
                 <br>
             </div>
+            <!-- <div class="winset">
+                Webpage By Winset
+            </div> -->
         </div>
 </body>
 
